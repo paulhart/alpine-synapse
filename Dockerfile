@@ -7,7 +7,8 @@ RUN apk --no-cache add \
     musl-dev \
     make \
     git \
-    sqlite
+    sqlite \
+    pkgconf
 
 
 RUN git clone https://github.com/coturn/coturn.git /coturn &&\
