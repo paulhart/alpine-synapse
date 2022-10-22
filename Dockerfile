@@ -9,7 +9,8 @@ RUN apk --no-cache add \
     git \
     sqlite \
     pkgconf \
-    openssl-dev
+    openssl-dev \
+    libevent-dev
 
 
 RUN git clone https://github.com/coturn/coturn.git /coturn &&\
