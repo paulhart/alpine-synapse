@@ -1,11 +1,11 @@
-FROM alpine:3.6
+FROM alpine:latest
 
 RUN apk --no-cache add \
-    python \
-    python-dev \
-    py-pip \
+    python3 \
+    python3-dev \
+    py3-pip \
     openssl-dev \
-    py-virtualenv \
+    py3-virtualenv \
     gcc \
     libffi-dev \
     musl-dev \
@@ -14,9 +14,11 @@ RUN apk --no-cache add \
     libressl \
     linux-headers \
     git \
-    libevent-dev
+    libevent-dev \
+    rust \
+    zlib-dev
 
-RUN virtualenv -p python2.7 /synapse &&\
+RUN virtualenv -p python3 /synapse &&\
     source /synapse/bin/activate &&\
     pip install --upgrade pip &&\
     pip install --upgrade setuptools &&\

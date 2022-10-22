@@ -1,6 +1,5 @@
 # Alpine Docker image with a synapse server
 
-[![Docker Stars](https://img.shields.io/docker/stars/cschlosser/alpine-synapse.svg)](https://hub.docker.com/r/cschlosser/alpine-synapse/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/cschlosser/alpine-synapse.svg)](https://hub.docker.com/r/cschlosser/alpine-synapse/)
-[![Docker Build](https://img.shields.io/docker/build/cschlosser/alpine-synapse.svg)](https://hub.docker.com/r/cschlosser/alpine-synapse/)
-[![Docker Layers](https://images.microbadger.com/badges/image/cschlosser/alpine-synapse.svg)](https://hub.docker.com/r/cschlosser/alpine-synapse/)
+Updated to use the latest Alpine distribution and python3 - the original repo is still in python 2.7 land and alpine 3.6.
+
+Also added further dependencies: Rust, zlib-dev
